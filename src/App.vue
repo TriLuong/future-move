@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Home />
+    <Approach />
   </div>
 </template>
 
-<script>
+<script defer>
 import HelloWorld from './components/HelloWorld.vue'
+import Home from "./layouts/Home"
+import Approach from "./layouts/Approach"
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Home,
+    Approach
   }
 }
 </script>
@@ -23,6 +26,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
 }
 </style>
